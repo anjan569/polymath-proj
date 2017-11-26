@@ -10,7 +10,7 @@ Version: 1.0
   3. SECTION ABOUT
   4. SECTION VIDEO
   5. SECTION TESTIMONIAL
-  6. SECTION FEATURES 
+  6. SECTION ACADEMICS 
   7. SECTION CALL TO ACTION
   8. SECTION APPS SCREEN 
   9. SECTION FUN FACTS 
@@ -30,6 +30,22 @@ body {
 p {
     font-family: 'Raleway', sans-serif;
     font-size: 14px;
+}
+
+
+@font-face {
+    font-family: myLogoFont;
+    src: url(../fonts/Original_by_fnkfrsh.otf);
+}
+
+@font-face {
+    font-family: ContentFont;
+    src: url(../fonts/Quinzey.otf);
+}
+
+@font-face {
+    font-family: HeaderFont;
+    src: url(../fonts/Passing_Notes.ttf);
 }
 /*---------------------------------------
    COMMON STYLES             
@@ -145,6 +161,10 @@ p {
 }
 .logo{
     padding-bottom: 0px;
+    font-family: myLogoFont;
+    color: #f39c12;
+    font-weight: 900;
+    font-size: 24px;
 }
 .home_text{
     font-family: 'Raleway', sans-serif;
@@ -445,26 +465,26 @@ div.carousel-inner .item img {
     background: #f39c12;
 }
 /*---------------------------------------
-   SECTION FEATURES              
+   SECTION ACADEMICS         
 -----------------------------------------*/
 
-.features {
+.academics {
     background-color: #f1f1f1
 }
-.feature_inner {
+.academic_inner {
     padding-top: 30px;
     padding-bottom: 70px;
 }
-.feature_iphone {} .feature_iphone img {
+.academic_iphone {} .academic_iphone img {
     width: 100%;
 }
-.right_single_feature {
+.right_single_academic {
     position: relative;
     padding-left: 90px;
     margin-bottom: 65px;
     margin-top: 35px;
 }
-.right_single_feature div {
+.right_single_academic div {
     position: absolute;
     font-size: 40px;
     color: #f39c12;
@@ -474,17 +494,17 @@ div.carousel-inner .item img {
     text-align: center;
     top: -8px;
 }
-.right_single_feature h3 {
+.right_single_academic h3 {
     text-transform: uppercase;
     font-size: 25px;
     font-weight: 700;
     margin-bottom: 21px;
     color: #333333;
 }
-.right_single_feature h3 span {
+.right_single_academic h3 span {
     color: #f39c12;
 }
-.right_single_feature p {
+.right_single_academic p {
     color: #333;
     font-size: 16px;
     font-weight: 300;
@@ -492,14 +512,14 @@ div.carousel-inner .item img {
 }
 /*left feature*/
 
-.left_single_feature {
+.left_single_academic {
     position: relative;
     padding-right: 90px;
     margin-bottom: 65px;
     text-align: right;
     margin-top: 35px;
 }
-.left_single_feature div {
+.left_single_academic div {
     position: absolute;
     font-size: 40px;
     color: #f39c12;
@@ -509,17 +529,17 @@ div.carousel-inner .item img {
     text-align: center;
     top: -8px;
 }
-.left_single_feature h3 {
+.left_single_academic h3 {
     text-transform: uppercase;
     font-size: 25px;
     font-weight: 700;
     margin-bottom: 21px;
     color: #333333;
 }
-.left_single_feature h3 span {
+.left_single_academic h3 span {
     color: #f39c12;
 }
-.left_single_feature p {
+.left_single_academic p {
     color: #333;
     font-size: 16px;
     font-weight: 300;
@@ -532,17 +552,17 @@ div.carousel-inner .item img {
     padding-right: 15px;
 }
 @media (min-width: 991px) and (max-width: 1200px) {
-    .right_single_feature {
+    .right_single_academic {
         margin-left: -60px;
     }
-    .left_single_feature {
+    .left_single_academic {
         margin-right: -60px;
     }
-    .feature_iphone {
+    .academic_iphone {
         margin-top: 35px;
     }
-    .right_single_feature h3,
-    .left_single_feature h3 {
+    .right_single_academic h3,
+    .left_single_academic h3 {
         margin-top: 0px;
         margin-bottom: 15px;
     }
@@ -584,14 +604,14 @@ div.carousel-inner .item img {
 }
 
 /*---------------------------------------
-   SECTION APPS SCREEN             
+   SECTION GALLERY            
 -----------------------------------------*/
 
-.apps_screen {
+.gallery {
     background: #f1f1f1;
     padding-bottom: 96px;
 }
-.screen_slider {
+.gallery_slider {
     padding-top: 50px;
 }
 .owl-theme .owl-controls .owl-page span {
@@ -611,6 +631,66 @@ div.carousel-inner .item img {
 .owl-theme .owl-controls.clickable .owl-page:hover span {
     opacity: 1;
     background: #f39c12;
+}
+
+
+.gallery-container h1 {
+    text-align: center;
+    margin-top: 70px;
+    font-family: 'Droid Sans', sans-serif;
+    font-weight: bold;
+    color: #58595a;
+}
+
+.gallery-container p.page-description {
+    text-align: center;
+    margin: 30px auto;
+    font-size: 18px;
+    color: #85878c;
+}
+
+.tz-gallery {
+    padding-left: 110px;
+    padding-right: 110px;
+}
+
+.tz-gallery .thumbnail {
+    padding: 0;
+    margin-bottom: 30px;
+    background-color: #fff;
+    border-radius: 4px;
+    border: none;
+    transition: 0.15s ease-in-out;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.06);
+}
+
+.tz-gallery .thumbnail:hover {
+    transform: translateY(-10px) scale(1.02);
+}
+
+.tz-gallery .lightbox img {
+    border-radius: 4px 4px 0 0;
+}
+
+.tz-gallery .caption{
+    padding: 26px 30px;
+    text-align: center;
+}
+
+.tz-gallery .caption h3 {
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 0;
+}
+
+.tz-gallery .caption p {
+    font-size: 12px;
+    color: #7b7d7d;
+    margin: 0;
+}
+
+.baguetteBox-button {
+    background-color: transparent !important;
 }
 /*---------------------------------------
    SECTION FUN FACTS              
