@@ -101,7 +101,11 @@ p {
 .navbar-brand {
     padding: 9px 15px;
 }
+
 @media(min-width:768px) {
+    .navbar-right{
+            padding-top: 20px;
+    }
     .navbar-default {
         background-color: transparent;
     }
@@ -159,12 +163,14 @@ p {
 .header .section_overlay {
     background-color: rgba(33, 33, 33, .75);
 }
+.scroll_down {
+    background: #D8D8D8;
+}
 .logo{
     padding-bottom: 0px;
     font-family: myLogoFont;
-    color: #f39c12;
-    font-weight: 900;
-    font-size: 24px;
+    
+   
 }
 .home_text{
     font-family: 'Raleway', sans-serif;
@@ -175,10 +181,14 @@ p {
     text-align: right;
 }
 .vision{
+    font-family: myLogoFont;
   color: #f47a25;
+  font-size: 24px;
 }
 .mission{
+     font-family: myLogoFont;
   color: #033148;
+  font-size: 24px;
 }
 .home-vm img{
    
@@ -1060,10 +1070,10 @@ div.carousel-inner .item img {
 -----------------------------------------*/
 
 .copyright {
-    background-color: #1A1D22;
+    /*background-color: #1A1D22; 
     padding-bottom: 45px;
     padding-top: 45px;
-    border-bottom: 3px solid #f39c12;
+    border-bottom: 3px solid #f39c12;*/
 }
 .copyright h2 {
     height: 0px;
@@ -1074,7 +1084,7 @@ div.carousel-inner .item img {
     width: 60%;
 }
 .copy_right_text p {
-    color: #8C8B8A;
+    color: #D8D8D8;
     font-weight: 600;
     text-transform: uppercase;
     font-size: 15px;
@@ -1091,11 +1101,11 @@ div.carousel-inner .item img {
     text-align: right;
 }
 .scroll_top a {
-    background: #f39c12;
+    background: #D8D8D8;
     padding: 25px;
 }
 .scroll_top a i {
-    color: #fff;
+    color: #f39c12;
     font-size: 25px;
 }
 input:-webkit-autofill,
